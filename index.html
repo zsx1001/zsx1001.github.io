@@ -1,179 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>~张守祥~Resume</title>
-  <style>
-    /* 全局 */
-    {
-      margin: 0;
-      padding: 0;
-    }
-    .website{
-      color: salmon;
-      font-size: 14px;
-      font-weight: 500;
-    }
-    /* 头部 */
-    header{
-      width: 100%;
-      height: 200px;
-      background: lightgoldenrodyellow;
-    }
-    
-    img{
-      width: 300px;
-      height: 200px;
-      margin-left: 30px;
-      float: left;
-    }
-    nav {
-      float: left;
-      margin-left: 30px;
-      color: salmon;
-    }
-    nav > h1 {
-      margin-top: 10px;
-      font-size: 36px;
-      font-weight: 200;
-    }
-    nav > h2,h4 {
-      margin-top: 15px;
-    }
-    /* 正文 */
-    section{
-      width: 100%;
-      height: 800px;
-      background: #eae6e666;
-      position: relative;
-    }
-    /* 侧边 */
-    .sideBar{
-      width: 30%;
-      height: 100%;
-      background: #9adab599;
-      margin-left: 30px;
-    }
-    .sideBar > .personalInfo,.awards{
-      padding-left: 20px;
-    }
-    .sideBar > .selfEva{
-      padding: 0 5px;
-    }
 
-    .sideBar > div > h3{
-      color: brown;
-      font-weight: 500;
-      margin: 15px;
-    }
-    .personalInfo{
-      padding: 5px;
-    }
-    .personalInfo > ul > li{
-      margin-top: 8px;
-    }
-    .awards > ul > li{
-      margin-top: 8px;
-    }
-    /*主要内容*/
-    .content{
-      width: 70%
-      position: absolute;
-      top: 0;
-      left: 330px;
-    }
-    .content > div{
-      margin-top: 15px;
-      margin-left: 15px;
-    }
-    .content > div > h3{
-      margin-top: 20px;
-      margin-bottom: 15px;
-      color: brown;
-      font-weight: 500;
-    }
-    .education > div{
-      margin-bottom: 10px;
-    }
-    .education .para{
-      font-size: 18px;
-      font-family: monospace;
-    }
-    .education .para > i,span{
-      font-size: 12px;
-      margin-left: 10px;
-    }
-    .jobExp > div > p,ol{
-      margin-bottom: 10px;
-      font-size: 20px;
-      font-family: monospace;
-    }
-    .jobExp > div > ol{
-      margin-left: 30px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>~张守祥~Resume</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
 </head>
-<body>
-  <!-- Header -->
-  <header>
-      <img src="https://cn.bing.com/rp/vu7s3MyIC1DooJ-TuYQGRAOFku8.png">
-      <nav>
-        <h1>张守祥</h1>
-        <h2>二级建造师（机电专业）</h2>
-        <h2>中级工程师</h2>
-      </nav>
-    </div>
-  </header>
+<body style="font-family:Verdana;">
+<div style="background-color:#f1f1f1;padding:15px;">
+  <h1 style="color:red">张守祥</h1>
+  <h3>二级建造师（机电专业）<br>中级工程师</h3>
+</div>
 
-  <!-- Content -->
-  <section>
-    <!-- SideBar -->
-    <div class="sideBar">
-      <div class="personalInfo">
-        <h3>基本信息</h3>
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem">
+         <h3>基本信息</h3>
         <ul>
           <li>住址： 上海市宝山区</li>
           <li>电话： 13585**3835</li>
           <li>邮箱： zsx1001@163.com</li>
         </ul>
-      </div>      
-      <div class="selfEva">
-        <h3>工作岗位</h3>
+    </div>
+    <div class="menuitem">
+         <h3>工作岗位</h3>
          <ul>
           <li>工程部副经理</li>
           <li>机电项目经理</li>
           <li>机电工程师</li>
-        </ul>       
-      </div>
-      <div class="awards">
-        <h3>教育经历</h3>
+        </ul> 
+    </div>
+    <div class="menuitem">
+       <h3>教育经历</h3>
         <ul>
           <li>上海工程技术大学<br>电子信息技术，本科，学士</li>
           <li>山东农业大学<br>城镇给排水工程，大专</li>
           <li>五莲县街头高级中学<br>高中</li>
           </ul>
-      </div>
-      <div class="skill"></div>
     </div>
-    <!-- MainContents -->
-    <div class="content">
-      <div class="education">
-        <h3>工作经历</h3>
-        <div>
-           <p class="para">2021.09~今      上海地产住房发展有限公司<br>机电工程师，国企</p>
-           <p class="para">2010.05~2021.04 上海象屿置业有限公司<br>工程部副经理、机电项目经理，国企</p>
-           <p class="para">2007.10~2010.05 上海华江房地产开发有限公司<br>机电工程师，民企</p>
-           <p class="para">2003.06~2007.09 上海三盛房地产（集团）公司<br>机电工程师，民企</p>
-           <p class="para">2002.06~2003.06 济南水信达数控科技有限公司<br>业务主管，民企</p>
-           <p class="para">2001.04~2002.06 上海骏顺房地产开发有限公司<br>资料员，民企</p>
-           <p class="para">2000.08~2001.04 台湾安稼企业（上海办事处）<br>业务员，民企</p>
-        </div>
-        </div>
-      <div class="jobExp">
-        <h3>项目介绍</h3>
-        <div>
-         <table border="1px" style="width:80%">
+    <div class="menuitem">图库</div>
+  </div>
+
+  <div class="main">
+    <h2 style="text-align:center;">项目介绍</h2>
+    <p>
+ <table border="1px" style="width:100%">
   <tr>
     <td align=center>上海地产</td>
     <td>上海地产中星曹路基地开发有限公司</td> 
@@ -182,7 +98,13 @@
   </tr>
   <tr>
     <td align=center>2023.10~</td>
-    <td colspan=3>曹中大居负责4个项目现场机电工作</td>
+    <td colspan=3>
+<ul>
+<li>负责4个项目的现场机电工作，其中H-2-1二期和E-1-1二期为住宅项目，另外还有一个新建初中和文化中心；负责龚夏路（市政道路）和公交首末站施工。</li>
+<li>H-2-1二期项目占地11.39万m2，容积率为2，总建筑面积28.4154万m2，其中地上22.7721万m2，地下5.2541万m2，由28栋住宅单体，3栋变电站和1栋地下车库组成。其中住宅为11~20层的小高层建筑，现浇结构。目前处于结构施工阶段，主要负责现场机电预留预埋工作，负责分包单位的界面划分和梳理工作等。</li>
+<li>E-1-1二期项目占地1.507万m2，总建筑面积5.5759m2，其中地上面积4.5761万m2，地下面积1万m2。由4栋住宅单体，2栋变电站和1栋地下车库组成，4栋住宅为18层PC结构小高层。</li>
+</ul>
+</td>
   </tr>
   <tr>
     <td align=center>上海地产</td>
@@ -192,10 +114,20 @@
   </tr>
   <tr>
     <td align=center>2021.09~2023.09</td>
-    <td colspan=3>崇明区88个单位体</td>
+    <td colspan=3>
+<ul>
+<li>崇明农民集中安置房项目，于2021年4月开工建设，2023年6月交付。是上海市最大的集中居住安置项目，占地27.2万m2,容积率1.14，总建筑面积43.246万m2,其中地上32.065万m2，地下11.181万m2，分为60~120 m2五种户型，总户数3618套。小区分为4 个特色街坊，共88栋住宅单体，7栋配套公建，2栋垃圾压缩站，3栋开关站和18栋配电站，2 栋地下车库。</li>
+<li>项目采用BIM技术对地下车库的机电各专业进行设计，根据碰撞结果预先调整管线走向，提前规划管线管位和控制地库车道净高等。</li>
+<li>项目采用分布式屋顶光伏电站系统，装机总容量3.02Mw，按建筑单体设置了88个并网点进行国网并网;是上海市首个在住宅小区采用分布式屋顶光伏电站的发电系统,因此对电站并网方式、电站维护管理、电站收益分配等进行了大量的探索，最终一一确定实现国网并网，并网后完成可再生能源专项补贴的申报工作。</li>
+<li>小区智能化工程系统要求高，初期设计按两个独立项目设计，实际按一个项目进行方案评审和验收。节省了两个项目中间的封闭围墙及电子围栏等设备安装。因项目规模大，点位多，多次组织施工分包进行进度及数据互联互通协调。</li>
+<li>项目电梯工程的协调较为复杂，项目共有电梯289台，需根据现场土建施工进度按批次提前安排厂家生产，协调现场堆场，根据进度情况组织安装队进场施工，协调特种设备验收备案，协调厂家设备上线开通、试运行，协调物业移交及后续维修。</li>
+<li>根据交通委及当地供电局相关要求，小区充电桩工程需有10%车位安装到位，其余车位预留安装条件，地库停车位需完成充电桩配电柜、电表箱、电缆桥架、线管及电缆敷设工作，地面停车位需完成电表箱、电缆通道及电缆敷设工作。</li>
+<li>项目配套工程的管理难度较大，因工期紧，配套工程与总包雨污水、道路及景观绿化工程交叉作业，管理及协调难度大大增加。根据项目情况，组织各配套专业分区域多点同步施工，同时要求不同专业间按要求依次进行流水施工，最终顺完成变电站设备安装、电力排管、电缆敷设，完成通水通电，为其它专业争取了调试验收时间。</li>
+</ul>
+</td>
   </tr>
 </table>
-<table border="1px" style="width:80%">
+<table border="1px" style="width:100%">
   <tr>
     <td align=center>象屿地产</td>
     <td>苏州致喜房地产开发有限公司</td> 
@@ -204,7 +136,14 @@
   </tr>
   <tr>
     <td align=center>2017.08~2021.04</td>
-    <td colspan=3>沙溪</td>
+    <td colspan=3>
+   <ul>
+  <li>
+项目2018年3月23日取得工程施工许可证，2020年12月20日取得竣工备案，并于2020年12月30日成功交付；项目位于太仓市沙溪镇姚泾南路6号，占地59000m2,建筑面积154000m2,其中地下面积约45000m2，含人防面积9000m2。小区共有24栋住宅单体和一座地下车库及门卫室、垃圾房、变电站组成；其中24栋住宅单体由12栋18层高层和12栋8层小高层住宅及沿街商铺组成。</li>
+<li>项目难点在于公司申报的40%的装配率，现场参建各方均首次建设装配式住宅，给项目进展造成了很大阻力。作为工程部副经理首当其冲的是带领大家寻找突破口。一方面抓设计院与构件厂，协调双方加强沟通，从生产和安装方面对构件拆分设计的合理性进行及时修正；一方面抓总包的专业施工管理人员，调配专业班组进行补强；带领大家积极学习，通过参观构件厂、样板项目等方式听取构件生产及安装过程的相关经验及教训，合理组织本项目构件生产及现场安装全过程的顺利进行。项目的另一个难点是售楼处样板区，时间紧、任务重、专业分包多，多工种交叉作业，现场进度、质量及安全管理协调量非常大，经协调各分包按节点进行流水施工后顺利近期开放了售楼处和前场样板区，拉长了销售蓄客时间。为首次开盘取得佳绩奠定了基础。</li>
+<li>项目实施过程中兼任机电项目经理。顺利完成地勘和前期试桩工程为后续设计的有序开展提供一手资料；组织完成前期场平、临设搭建、施工总平布置等工作；按时有序完成临地租赁、临水临电接驳、项目道口开通等基础工作。2019年上半年基本完成五大配套管线的申请工作，下半年完成审图、专业方案设计、合同签订及相关缴费工作，结合外场施工进度2020年11月完成正式水电接通，完成各配套工程的相关验收工作；负责相关供应及机电设备（太阳能、雨水回收、电梯、智能家居等）考察筛选工作。</li>
+   </ul>
+   </td>
   </tr>
   <tr>
     <td align=center>象屿地产</td>
@@ -214,7 +153,12 @@
   </tr>
   <tr>
     <td align=center>2014.01~2017.08</td>
-    <td colspan=3>大宁</td>
+    <td colspan=3>
+  <ul>
+  <li>
+<li>项目位于上海市静安区平型关路1899弄（近中环），由12栋18层住宅及1座地下车库和变电站、垃圾压缩站等组成。负责项目建设过程中的外部配套施工申报和现场配套、水电工程管理工作；负责2个样板区景观绿化及大区景观绿化工程施工；负责会所装修机电安装工作，负责会所泳池等后期维保工作；负责机电供应商及设备（空调、新风、地暖等）的考察筛选工作。</li>
+  </ul>
+  </td>
   </tr>
     <tr>
     <td align=center>象屿地产</td>
@@ -224,26 +168,32 @@
   </tr>
   <tr>
     <td align=center>2010.05~2014.01</td>
-    <td colspan=3>宝山象屿郦 庭</td>
+    <td colspan=3>
+     <ul>
+     <li>项目位于上海市宝山区高镜镇一二八纪念东路上，由9栋住宅单体及一座地下车库和规划菜场、变电站及垃圾房等组成。负责项目现场水电工程管理工作，完成管线配套工程申报及现场施工协调工作；负责售楼处及样板装修工作；负责样板区及大区景观绿化工程施工管理工作。</li>
+      </ul>
+    </td>
   </tr>
 </table>
-        </div>
-      </div>
-      <div class="skill">
-        <h3>能力特长</h3>
-        <div>
-          <p>嘿哈</p>
-          <progress value="50" max="100"></progress>
-          <p>哈嘿</p>
-          <progress value="50" max="100"></progress>
-          <p>哈哈</p>
-          <progress value="50" max="100"></progress>
-          <p>嘻嘻</p>
-          <progress value="40" max="100"></progress>
-        </div>
-      </div>
-    </div>
+    </p>
+  </div>
 
-  </section>
+  <div class="right">
+<h3>工作经历</h3>
+       <ul>
+          <p><li>上海地产住房发展有限公司<br>2021.09~今      ，机电工程师</li></p>
+          <p><li>上海象屿置业有限公司<br>2010.05~2021.04 ，工程部副经理、机电项目经理</li></p>
+          <p><li>上海华江房地产开发有限公司<br>2007.10~2010.05， 机电工程师</li></p>
+          <p><li>上海三盛房地产（集团）公司<br>2003.06~2007.09 ，机电工程师</li></p>
+          <p> <li>济南水信达数控科技有限公司<br>2002.06~2003.06，业务主管</li></p>
+          <p> <li>上海骏顺房地产开发有限公司<br>2001.04~2002.06，资料员</li></p>
+          <p> <li>台湾安稼企业（上海办事处）<br>2000.08~2001.04，业务员</li></p>
+     </ul>
+  </div>
+</div>
+
+
+<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> 该网页是参考 w3schools.cn 制作的，查看内容可自适应设备及浏览器窗口大小</div>
 </body>
 </html>
+
