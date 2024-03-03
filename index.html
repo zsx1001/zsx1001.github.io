@@ -8,7 +8,16 @@
 * {
   box-sizing: border-box;
 }
-
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: lightBlue;
+}
+.flex-container .box{
+  float:left;
+  width:33.33%;
+  text-align: center;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -16,22 +25,21 @@ body {
 /* 样式表头 */
 header {
   background-color: lightblue;
+  width:100%;
   padding: 10px;
   text-align: center;
   font-size: 25px;
   color: brown;
 }
 img {
-  width: 200px;
-  height: 150px;
+  width:50%;
   margin-right: 10px;
-  float: left;
+  float: center;
     }
 /* Create two columns/boxes that floats next to each other */
 nav {
   float: left;
   width: 30%;
-   /*height: 300px; only for demonstration, should be removed */
   background: #ccc;
   padding: 10px;
   color: brown;
@@ -39,7 +47,7 @@ nav {
 }
 /* Style the list inside the menu */
 nav ul {
- list-style-type: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   text-align:left;
@@ -58,9 +66,7 @@ article {
   padding: 20px;
   width: 70%;
   background-color: #f1f1f1;
-  /*  height: 300px;only for demonstration, should be removed */
 }
-
 /* 清除列后的浮点数 */
 section:after {
   content: "";
@@ -74,6 +80,9 @@ footer {
   text-align: center;
   color: white;
 }
+footer ul {
+  list-style-type: none;
+}
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
@@ -86,11 +95,27 @@ footer {
 </head>
 <body>
 <header>
-  <div style="padding:15px;">
+  <div class="flex-container">
+  <div class="box">
   <img src="https://cn.bing.com/rp/vu7s3MyIC1DooJ-TuYQGRAOFku8.png">
-  <h1 style="color:red">效果</h1>
-  <h3 style="text-align:left;">专业）<br>工程</h3>
-</div>
+  </div>
+  <div class="box">
+  <h3 style="color:red">张守祥</h3>
+  <h5>二级建造师（机电专业）中级工程师</h5>
+  <p>大学本科，学士学位<p>
+  </div>
+  <div class="box">
+  <footer>
+  <p> 
+        <ul > 
+          <li >135*****835</li>
+          <li style="color:brown;"><a href="mailto: zsx1001@163.com">zsx1001@163.com</li>
+          <li style="color:red;"><botton onclick="window.print()">打印</botton></li>
+        </ul>
+</p>
+</footer>
+  </div>
+  </div>
 </header>
 
 <section>
@@ -176,7 +201,6 @@ footer {
     <td align=center>2014.01~2017.08</td>
     <td colspan=3>
   <ul>
-  <li>
 <li>项目位于上海市静安区平型关路1899弄（近中环），由12栋18层住宅及1座地下车库和变电站、垃圾压缩站等组成。负责项目建设过程中的外部配套施工申报和现场配套、水电工程管理工作；负责2个样板区景观绿化及大区景观绿化工程施工；负责会所装修机电安装工作，负责会所泳池等后期维保工作；负责机电供应商及设备（空调、新风、地暖等）的考察筛选工作。</li>
   </ul>
   </td>
@@ -201,7 +225,9 @@ footer {
 </section>
 
 <footer>
-  <p> <li>住址： 上海市宝山区</li>
+  <p> 
+        <ul> 
+          <li>住址： 上海市宝山区</li>
           <li>电话： 13585**3835</li>
           <li>邮箱： zsx1001@163.com</li>
           <li><botton onclick="window.print()">打印</botton></li>
@@ -211,4 +237,3 @@ footer {
 
 </body>
 </html>
-
